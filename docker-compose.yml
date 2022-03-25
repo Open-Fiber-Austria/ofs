@@ -1,0 +1,14 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  development:
+    # This service is only used to provide the availability to skip creating a virtual environment
+    # in some cases this might be more useful
+    build:
+      dockerfile: Dockerfile
+      context: .
+      target: develop
+    volumes:
+    - ${PWD}/docs:/docs/docs:z
+    - ${PWD}/mkdocs.yml:/docs/mkdocs.yml:z
+    ports:
+    - 8081:8000
