@@ -1,3 +1,5 @@
+![ofaa_logo](https://user-images.githubusercontent.com/7644657/160231882-45ef6059-f580-414f-abf6-f6326c0a1f1c.jpg)
+
 # Open Fiber Standards
 
 Ziel von [OFAA](https://ofaa.at) ist der Ausbau von offenen Glasfaser-Netzen in Österreich. Zur Unterstützung dieses 
