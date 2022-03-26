@@ -1,0 +1,13 @@
+# An action to build a new version of the documentation
+name: Build Documentation
+description: |
+  Try to build a new version of the documentation by using the mkdocs tool.
+  Pipeline will fail in case of syntax errors.
+author: Daniel Hofstetter<dh@yio.at>
+runs:
+  using: "composite"
+  steps:
+    # simply take the mkdocs tool to build a new documentation
+    #  (static content) to check if syntax is correct.
+    - run: mkdocs build --verbose
+      shell: bash
