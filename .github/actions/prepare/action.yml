@@ -1,0 +1,14 @@
+# An action to build a new version of the documentation
+name: Prepare Environment
+description: Use a python environment and install the required dependencies.
+author: Daniel Hofstetter<dh@yio.at>
+runs:
+  using: "composite"
+  steps:
+    # simply take the mkdocs tool to build a new documentation
+    #  (static content) to check if syntax is correct.
+    - uses: actions/setup-python@v2
+      with:
+        python-version: 3.x
+    - run: pip install -r requirements.txt
+      shell: bash

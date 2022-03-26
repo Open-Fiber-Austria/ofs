@@ -1,0 +1,31 @@
+name: Publish Documentation (Prod)
+on:
+  push:
+    branches:
+      - master
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    if: ${{ github.ref == 'refs/heads/master' }}
+    steps:
+      - uses: actions/checkout@v2
+      # Make use of prepare action
+      - name: Prepare Environment
+        uses: ./.github/actions/prepare
+      # Make use of build action
+      - name: Build Documentation
+        uses: ./.github/actions/build
+      # Use the third party action for sync.
+      - name: Change Directory
+        run: cd "site"
+      - name: Deploy Documentation
+        uses: milanmk/actions-file-deployer@master
+        with:
+          remote-protocol: "ftp"
+          remote-host: ${{ secrets.DEPLOY_PROD_HOST }}
+          remote-user: ${{ secrets.DEPLOY_PROD_USER }}
+          remote-password: ${{ secrets.DEPLOY_PROD_PASS }}
+          remote-path: "."
+          local-path: "."
+          sync: "full"
