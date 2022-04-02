@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+      - 004_FixActions
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -24,6 +25,7 @@ jobs:
           remote-host: ${{ secrets.DEPLOY_PROD_HOST }}
           remote-user: ${{ secrets.DEPLOY_PROD_USER }}
           remote-password: ${{ secrets.DEPLOY_PROD_PASS }}
-          remote-path: "."
-          local-path: "."
+          remote-path: "/"
+          local-path: "./site"
           sync: "full"
+          debug: "true"
