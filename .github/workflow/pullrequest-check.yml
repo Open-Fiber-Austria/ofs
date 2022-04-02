@@ -1,6 +1,8 @@
 name: Check Build
 on:
   pull-request
+  workflow_dispatch
+  push
 
 jobs:
   syntax:
