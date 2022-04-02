@@ -8,7 +8,7 @@ copyright: "Copyright &copy; 2022 Open Fiber Austria Association - OFAA | suppor
 # lead to unexpected behavior).
 # I'm not sure how it works with multi-language docs.
 nav:
-  - introduction/preambel.md
+  - index.md
   - introduction/license.md
   - 'Grundlagen':
     - '3-LOM': introduction/3lom.md
