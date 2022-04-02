@@ -9,6 +9,7 @@ copyright: "Copyright &copy; 2022 Open Fiber Austria Association - OFAA | suppor
 # I'm not sure how it works with multi-language docs.
 nav:
   - introduction/preambel.md
+  - introduction/license.md
   - 'Grundlagen':
     - '3-LOM': introduction/3lom.md
     - '4-LOM': introduction/4lom.md
@@ -55,6 +56,9 @@ extra:
     - icon: fontawesome/regular/bookmark
       link: https://ofaa.at
       name: ofaa on the Internet
+    - icon: fontawesome/brands/github
+      link: https://github.com/Open-Fiber-Austria/ofs
+      name: ofs on github
   generator: false
   # The following example shows how to create multilanguage support
   # but that means to create two directories within your doc folder
