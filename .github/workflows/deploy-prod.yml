@@ -21,7 +21,7 @@ jobs:
         with:
           remote-protocol: "ftp"
           remote-host: ${{ secrets.DEPLOY_PROD_HOST }}
-          remote-port: 21
+          remote-port: "21"
           remote-user: ${{ secrets.DEPLOY_PROD_USER }}
           remote-password: ${{ secrets.DEPLOY_PROD_PASS }}
           remote-path: "/"
