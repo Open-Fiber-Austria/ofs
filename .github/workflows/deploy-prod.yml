@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - main
-      - 004_FixActions
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -27,4 +27,3 @@ jobs:
           remote-path: "/"
           local-path: "./site"
           sync: "full"
-          debug: "true"
