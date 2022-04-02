@@ -16,8 +16,6 @@ jobs:
       - name: Build Documentation
         uses: ./.github/actions/build
       # Use the third party action for sync.
-      - name: Change Directory
-        run: cd "site"
       - name: Deploy Documentation
         uses: milanmk/actions-file-deployer@master
         with:
