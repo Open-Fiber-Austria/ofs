@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -15,15 +16,14 @@ jobs:
       - name: Build Documentation
         uses: ./.github/actions/build
       # Use the third party action for sync.
-      - name: Change Directory
-        run: cd "site"
       - name: Deploy Documentation
         uses: milanmk/actions-file-deployer@master
         with:
           remote-protocol: "ftp"
           remote-host: ${{ secrets.DEPLOY_PROD_HOST }}
+          remote-port: "21"
           remote-user: ${{ secrets.DEPLOY_PROD_USER }}
           remote-password: ${{ secrets.DEPLOY_PROD_PASS }}
-          remote-path: "."
-          local-path: "."
+          remote-path: "/"
+          local-path: "./site"
           sync: "full"
