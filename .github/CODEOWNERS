@@ -1,0 +1,14 @@
+# Order is important; the last matching pattern takes the most
+# precedence. When someone opens a pull request that only
+# modifies JS files, only @js-owner and not the global
+# owner(s) will be requested for a review.
+*                       @Open-Fiber-Austria/board
+
+# To review any files not related to mkdocs we use the
+# administrators
+.github                 @Open-Fiber-Austria/admin
+.gitignore              @Open-Fiber-Austria/admin
+.dockerignore           @Open-Fiber-Austria/admin
+docker-compose.yml      @Open-Fiber-Austria/admin
+Dockerfile              @Open-Fiber-Austria/admin
+
