@@ -2,12 +2,10 @@ name: Publish Documentation (Prod)
 on:
   push:
     branches:
-      - master
       - main
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    if: ${{ github.ref == 'refs/heads/master' }}
     steps:
       - uses: actions/checkout@v2
       # Make use of prepare action

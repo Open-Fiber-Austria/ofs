@@ -1,6 +1,6 @@
 name: Check Build
 on:
-  pull-request
+  pull_request
 
 jobs:
   syntax:
