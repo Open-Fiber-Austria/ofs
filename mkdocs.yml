@@ -30,6 +30,7 @@ nav:
     - standards/fep001_feb-workflow.md
     - standards/fep002_darstellung-oaid.md
     - standards/fep003_darstellung-olid.md
+    - standards/fep004_layer1_status_definition.md
 
 
 theme:
