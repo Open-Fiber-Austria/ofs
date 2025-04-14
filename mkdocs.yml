@@ -21,15 +21,18 @@ nav:
   - 'Diskussionen':
     - discussions/support.md
     - discussions/user_stories.md
-  - 'Glossar':
-    - 'Variante 1': glossar/glossar_1.md
-    - 'Variante 2': glossar/glossar_2.md
-    - 'Variante 3': glossar/glossar_3.md
+  - "Glossar": glossar/glossar.md
   - 'Standards':
     - 'Einführung': standards/intro.md
     - standards/fep001_feb-workflow.md
     - standards/fep002_darstellung-oaid.md
     - standards/fep003_darstellung-olid.md
+  - 'Leitfaden Inhaus-Verkabelung':
+    - inhaus_verkabelung/01_einleitung.md
+    - inhaus_verkabelung/02_fokus_leitfaden.md
+    - inhaus_verkabelung/03_abbreviations.md
+    - inhaus_verkabelung/04_rechtliche_grundlagen.md
+    - inhaus_verkabelung/05_leitfaden.md
 
 
 theme:
@@ -47,10 +50,10 @@ theme:
   features:
     - navigation.instant
     - navigation.tracking
-    - navigation.expand
+    # - navigation.expand      # uncomment this line to expand all sidebar sections by default
     # - navigation.tabs        # uncomment this line to use a horizontal nav bar as well
     # - navigation.tabs.sticky # uncomment this line to make the horizontal nav bar sticky
-    - navigation.sections
+    # - navigation.sections    # uncomment this line to disable collapsible top-level sidebar sections and show them as bold headers
     - navigation.indexes
     - content.code.annotate
     - content.tabs.link
@@ -103,3 +106,5 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
   - md_in_html
+  - pymdownx.tilde
+  - pymdownx.caret
