@@ -1,54 +1,33 @@
-# User Stories
+# Support-Funktionalitäten
 
-Exemplarische Anwendungsfälle, wie sie im Laufe der Nutzung vorkommen könnten.
+Ist der Kunde von Beginn an in die Herstellung involviert, wird über den Herstellungsprozess gesorgt, dass der Kunde seine Open Access ID erfährt. Jedoch findet diese Herstellung nur einmalig statt, während hingegen die Nutzung der Infrastruktur auf dreissig oder mehr Jahre ausgelegt ist. Unterlagen oder Vereinbarungen, die dem Besteller der Infrastruktur übermittelt wurden, stehen nachfolgenden Kunden dann unter Umständen nicht mehr zur Verfügung. Damit dennoch sichergestellt ist, dass der jeweilige Standort von einem neuen Kunden eindeutig ermittelt, also die OAID eruiert werden kann, ist ein Paket von mehreren Maßnahmen sinnvoll.
 
-#### Feasibility Check
+### Kennzeichnung der physischen Abschlüsse
+Wie im Bild im Kapitel physische Darstellung ersichtlich werden kundenseitig mehrere Elemente eingebracht. Da die OAID vom PIP zur Verfügung gestellt wird, bieten sich zur Kennzeichnung die Netzelemente FTU und/oder BEP an. Auch eine Kennzeichnung am REP, wenn dieser z.B. frei zugänglich ist, wäre möglich.
 
-Die Infrastrukturbetreiber erstellen auf Basis ihrer Netze Gebiete, in denen Glasfaser geplant, gebaut 
-oder bereits verfügbar ist. Als Minimalanforderung ist eine Verschneidung auf Basis von Geokoordinaten 
-vorzusehen, die entsprechend der Kategorie des Gebietes Rückmeldung liefert. Koordinaten außerhalb dieser 
-Gebiete sind abzuweisen.
-
-Je nach Implementierung kann die Rückmeldung auch verfügbare Produkte und Preise für eine Herstellung 
-beinhalten. Eine nachfolgende Bestellung einer Glasfaser-Herstellung ist i.A. nur bei positivem 
-Feasibility Check möglich.
-
-#### Bestellung eines Internet Service Vertrages
-
-Im Zuge der Herstellung des Glasfaser-Anschlusses wurde der Kunde über seine Open Access ID informiert. 
-Die Open Access ID befindet sich in den Unterlagen, aber auch auf dem Glasfaser-Abschluss (FTU), sodass 
-eine Person vor Ort diese ablesen kann.
-
-Bei Bestellung des Internet Dienstevertrages ist die Angabe der OAID verpflichtend. Gepaart mit den 
-zusätzlichen Parametern der Bestellung, kann nun eine Verifizierung erfolgen. Der ISP übermittelt OAID und 
-Angaben zum Standard an den PIP, dieser bestätigt die Existenz, den Status der OAID sowie die  annähernde 
-Übereinstimmung mit der postalischen Adresse. Stimmen OAID und ungefähre Lage der übermittelten Adresse 
-nicht überein, so ist die Annahme der Bestellung zu verweigern. Stimmen OAID und ungefähre Lage überein 
-und ist der Standort gebaut, kann die Bestellungen angenommen werden.
-
-In Mehrparteienhäusern sind zusätzliche, relative Ortsangaben vorzusehen (z.B. Türnummer).
+Bei der Wahl der Beschriftung sollte eine möglichst langlebige und dem Einsatzort (innen, außen) entsprechende Variante gewählt werden. Die Montage vor Ort findet durch geschultes Fachpersonal statt. Die Durchführung beinhaltet auch Prüfung und Dokumentation. Daher bietet sich dieser Moment auch für die Erstellung und Anbringung der Beschriftung an.
 
 
-#### Bestellung eines Internet Service Vertrages ohne bekannter Open Access ID
+### Elektronische Abfrage der potenziellen Glasfaser-Gebiete
 
-Ein Mieter hat die Wohnung übernommen und möchte einen Internet-Dienstevertrag abschließen. 
-Vom Vormieter weiß er, dass prinzipiell Glasfaser verfügbar ist, der Internet Anbieter verlangt 
-eine OAID, die er nicht kennt.
+![Feasibility Check](/assets/feasy_check@2x.png){ align=center, loading=lazy }
 
-Der Mieter findet die OAID als Aufkleber (Typenschild) auf dem Faserabschluss (FTU). In 
-Einfamilienhäusern und bei nur einer Nutzeinheit kann dieses Typenschild auch im BEP oder REP 
-angebracht werden. In Mehrparteienhäuser bietet sich der zentrale Hausverteiler an: ähnlich wie 
-bei den Stromzählern mit individueller Zählpunktnummer, der zentrale Technikraum oder ein 
-Verteilerkasten im Stiegenhaus.
+Damit Kunden möglichst einfach die Verfügbarkeit von Glasfaser an ihrem Standort prüfen können benötigen sie Informationen zur Verfügbarkeit der passiven Infrastruktur und den an ihrem Standort möglichen Anbietern und deren Produkte. Informationen zum ANO werden in der Regel nicht benötigt.
+Diese Verfügbarkeitsabfrage nennt man Feasibility Check. Der Feasibility Check basiert im wesentlichen auf einer übermittelten Koordinate. Da Kunden in der Regel nur ihre Adresse, nicht aber die Position kennen, ist u.U. eine Auflösung der Adresse zur Koordinate davor zu schalten (Geokodierung).
 
-Ein generelles Problem entsteht, wenn ein Kunde keinerlei Informationen über die dem Standort 
-zugeordnete OAID besitzt und sich diese vor Ort auch nicht feststellen lässt (zB Beschriftung von 
-BEP oder FTU wurden bei Montage nicht durchgeführt, sind verblasst, ...). Eine korrekte OAID ist 
-jedoch Voraussetzung für die Bestellung eines Internet-Dienstevertrages. In diesem Fall kann nur 
-gemeinsam, in der Kommunikation mit Endkunde und PIP, die korrekte OAID identifiziert werden.
+Der Feasibility Check enthält Informationen wie aktuellen Ausbauzustand des Netzes (in Planung, in Bau, in Betrieb - plan, construct, operate)
+Kosten sowie Bedingungen und Voraussetzungen für die Errichtung (Entgelte und Vertragsbestimmungen)
+Hinweis auf das Datum der Errichtung bzw. Herstellungsdauer
+Übersicht der Internet-Diensteanbieter und deren Produkte
+Informationen zum ANO werden in der Regel nicht benötigt. Der Feasibility Check ersetzt auch keinesfalls eine technische Prüfung der Realisierbarkeit des Anschlusses am angefragten Standort (etwaige Probleme werden erst in der Detailplanung oder sogar erst während der Errichtung sichtbar). Weiters ist es für den PIP nicht notwendig, Detailinformationen zum Netz (z.B. genaue Trassenführung) bekannt zu geben. Ausreichend sind Hüllkurven über die Netzgebiete. Die Verwendung von Polygonen bietet den Vorteil auch Adressen zu inkludieren, die ursprünglich nicht im Fokus gewesen oder aufgrund einer zu ungenauen Geokodierung rausgefallen wären.
 
-Es ist auf Seiten des Infrastrukturbetreibers bzw. der OAID Vergabestelle sicher zu stellen, dass 
-Adressänderungen (zB geänderte Postleitzahlen) aktuell und historisch mit der OAID verknüpft sind. 
-Eine Ungenauigkeit in der Abfrage (Geoverortung und Vergleich zur gespeicherten OAID) ist zu 
-tolerieren.
+### Elektronische Abfrage bestehender OAIDs
+
+![OAID Check](/assets/oaid_check@2x.png){ align=center, loading=lazy }
+
+Die Abfrage geplanter (= bestellter) oder bestehender Standorte unter Verwendung der zugehörigen OAID ist ein berechtigtes Interesse aller übergeordneten Schichten. Abhängig von der abfragenden Rolle existieren verschiedene Vertrauensstufen. Je niedriger diese Stufe, desto höher sollten die Sicherheitsmerkmale ausfallen. Ein ANO muss, da er für den aktiven Betrieb verantwortlich ist, jederzeit die in seinem Gebiet geplanten und existierenden Standorte und deren Status kennen. Ein ISP muß in der Lage sein, Anfragen von Kunden zuverlässig zu beantworten, darf jedoch keine Informationen über die Nutzung des Anschlusses bei anderen ISPs haben. Ein Kunde hat berechtigtes Interesse, die Errichtung seines bestellten Anschlusses mitzuverfolgen. Usw.
+Dieses Anforderungen müssen kein Widerspruch sein, erfordert aber eine sorgfältige Konzeption der Schnittstellen. Zwischen ANO und PIP kann, aufgrund der ohnedies bestehenden vertraglichen Vereinbarung, ein Zugriff auf alle Standorte innerhalb der Nutzregion vereinbart werden. Bei Anfragen durch ISP und potenzielle Kunden - im Allgemeinen besteht hier keine vertragliche Vereinbarung - sind erweiterte Mechanismen notwendig um zwischen dem Schutz der Infrastruktur und Privatsphäre sowie berechtigtem Interesse zu unterscheiden. Es bietet sich an, lokale Ortskenntnisse als Sicherheitsmerkmale mit einzubeziehen. Die Abfrage einer OAID könnte für diese Nutzer nur dann zum Erfolg führen, wenn beispielsweise die richtige Postleitzahl, eine Koordinate innerhalb eines Suchradius oder ähnliches mitgesendet wird. In allen Fällen bedeutet es, dass die Verwaltung von OAIDs zusätzliche, absoluten und relative geographischen Attribute notwendig macht. Diese Merkmale sind darüber hinaus permanent an die sich ändernden Umwelten anzupassen (z.B. Änderung der Adressbezeichnung, Änderungen der Postleitzahl, Parzellierungen, Gemeindezusammenlegungen usw. …). Bei der Wahl der Merkmale sind jene zu bevorzugen, die dem durchschnittlichen Endkunden geläufig sind (z.B. Postleitzahl vs. Gemeindekennziffer). Auch hier kommt der Erfassung des Ist-Zustandes bei der Montage ein gewichtiger Beitrag zu.
+Denkbar wäre auch die Verwendung eines geheimen Kennwortes (vergleiche dazu Kundenkennwort bei Mobilfunkverträgen). Da die Nutzung auf mehrere Jahre ausgelegt und nicht an eine Person (natürlich oder juristisch) gebunden ist, stellt das keine erschöpfende Lösung dar.
+
+
 

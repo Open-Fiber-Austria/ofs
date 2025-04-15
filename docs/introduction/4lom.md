@@ -2,7 +2,6 @@
 
 ![Four-Layer-Open-Model](/assets/4_layer_model@2x.png){ align=center, loading=lazy }
 
-Five-Layer Open Model (4LOM)
 In der Realität kommt zum Modell noch eine vierte Schicht hinzu. Ohne Kunden ist das Modell nicht vollständig. Das Modell wird dann zu einem Three+One Layer Open Model, oder - nochmals vereinfacht - zu einem Four-Layer Open Model bzw. abgekürzt 4LOM.
 
 ## Logische Darstellung
@@ -32,7 +31,7 @@ Im Zuge der Montage wird ein Kabel vom Faserverteiler (Fiber Concentration Point
 Bei der Montage ist dem PIP ein einmaliger Zugang für die Verbindung des Kabels vom FCP mit dem Innenkabel und weiter dann der Anschluss der FTU zu gewährleisten. Zugleich können bei diesen Arbeiten auch der optische Netzabschluss (Optical Network Termination, ONT) des Aktivnetzbetreiber (Active Network Operator, ANO) und der eigentliche Router (Customer Premises Equipment, CPE) des Internet Service Providers (ISP) angeschlossen werden.
 
 #### Grundstück mit zwei Objekten
-Das dritte Bild von links zeigt beispielhaft die Situation mit zwei Standorten auf einem Grundstück, die über den gleichen Planungspunkt (Planning Locatgion) versorgt werden. Hier gibt es zwei vollwertige Installationen. Die Koordinaten sind so gesetzt, dass die Zuordnung eindeutig ist. Die Open Access ID der jeweiligen Sites wird (z.B.) auf der FTU im jeweiligen Haus angebracht (es wird seitens PIP nur ein einziger physischer BEP zur Verfügung gestellt, für die Weiterleitung am Grundstück ist der Kunde verantwortlich).
+Das dritte Bild von links zeigt beispielhaft die Situation mit zwei Standorten auf einem Grundstück, die über den gleichen Planungspunkt (Planning Location) versorgt werden. Hier gibt es zwei vollwertige Installationen. Die Koordinaten sind so gesetzt, dass die Zuordnung eindeutig ist. Die Open Access ID der jeweiligen Sites wird (z.B.) auf der FTU im jeweiligen Haus angebracht (es wird seitens PIP nur ein einziger physischer BEP zur Verfügung gestellt, für die Weiterleitung am Grundstück ist der Kunde verantwortlich).
 
 #### Mehrparteienhaus
 Das rechte Bild zeigt die Situation in einem Mehrparteienhaus. Mit dem Infrastruktur-Kunden wurde die Verlegung bis in einen zentralen Technikraum vereinbart. Von dort führt eine Indoor Verkabelung in jede Nutzeinheit. Alle Sites haben identische Koordinaten, die lediglich zur besseren Visualisierung im Komma Bereich abweicht. Jedoch erhalten alle Sites eine lokale Ortsangabe (Türnummer). Der zentrale Abschluss (BEP) befindet sich im Technikraum. Bei der Montage werden sowohl im zentralen Technikraum die Zuteilung der einzelnen Sites zur Nutzeinheit als auch auf den FTUs in den Wohnungen die OAIDs angebracht. Mieter (und deren Nachmieter…) können so die bei der Bestellung beim Internet Service Provider verlangte OAID einfach ermitteln.
@@ -58,7 +57,7 @@ Im wesentlichen gliedern sich alle Szenarien in die Phase der Herstellung und Ph
 
 ![Direct Order](/assets/conversation_direct@2x.png){ align=center, loading=lazy }
 
-Beginnend mit der Kundenanfrage (request) kann, nach sorgfältiger technischer Analyse und Planung, dem Kunden bei Annahme der Bestellung (confirma) bereits die OAID übermittelt werden. Je nach Situation vor Ort (Rollout, Bestandsnetz, …) erhält der Kunde so die Möglichkeit, schon frühzeitig die Abmeldung seines bestehenden Internet-Dienstes durchzuführen und einen neuen Vertrag bei einem der ISPs abzuschließen. Spätestens bei der Montage (deliver) wird die OAID auch physisch auf einem Endpunkt (FTU, BEP oder auch ONT, …) angebracht. Damit ist sichergestellt, dass auch nachfolgende Internet Kunden die OAID ihres Anschlusses kennen - auch wenn keine Unterlagen mehr zur Verfügung stehen.
+Beginnend mit der Kundenanfrage (request) kann, nach sorgfältiger technischer Analyse und Planung, dem Kunden bei Annahme der Bestellung (confirm) bereits die OAID übermittelt werden. Je nach Situation vor Ort (Rollout, Bestandsnetz, …) erhält der Kunde so die Möglichkeit, schon frühzeitig die Abmeldung seines bestehenden Internet-Dienstes durchzuführen und einen neuen Vertrag bei einem der ISPs abzuschließen. Spätestens bei der Montage (deliver) wird die OAID auch physisch auf einem Endpunkt (FTU, BEP oder auch ONT, …) angebracht. Damit ist sichergestellt, dass auch nachfolgende Internet Kunden die OAID ihres Anschlusses kennen - auch wenn keine Unterlagen mehr zur Verfügung stehen.
 
 Ein wesentlicher Vorteil in dieser vorgehensweise ist der unmittelbare Kundenkontakt in der doch komplexen Herstellung. Nachteilig sind die damit verbundenen Zusatzaufwände (Invoicing, Customer Support, …) für die - in den meisten Fällen - nur einmal zu erbringende Leistung.
 
