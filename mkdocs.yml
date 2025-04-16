@@ -8,19 +8,19 @@ copyright: "Copyright &copy; 2022 Open Fiber Austria Association - OFAA | suppor
 # lead to unexpected behavior).
 # I'm not sure how it works with multi-language docs.
 nav:
-  - index.md
-  - introduction/license.md
-  - 'Grundlagen':
-    - '3-LOM': introduction/3lom.md
-    - '4-LOM': introduction/4lom.md
-  - 'OAID':
-    - 'Open Access ID': oaid/oaid.md
-    - 'Open Link ID': oaid/olid.md
-    - 'FAQ': oaid/discussions.md
-    - 'Entstehung': oaid/oaid_birth.md
-  - 'Diskussionen':
-    - discussions/support.md
-    - discussions/user_stories.md
+  - "Zentrales OAID Register":
+    - index.md
+    - 'Grundlagen':
+      - '3-LOM': introduction/3lom.md
+      - '4-LOM': introduction/4lom.md
+    - 'OAID':
+      - 'Open Access ID': oaid/oaid.md
+      - 'Open Link ID': oaid/olid.md
+      - 'FAQ': oaid/discussions.md
+      - 'Entstehung': oaid/oaid_birth.md
+    - 'Diskussionen':
+      - discussions/support.md
+      - discussions/user_stories.md
   - "Glossar": glossar/glossar.md
   - 'Standards':
     - 'Einführung': standards/intro.md
@@ -33,6 +33,7 @@ nav:
     - inhaus_verkabelung/03_abbreviations.md
     - inhaus_verkabelung/04_rechtliche_grundlagen.md
     - inhaus_verkabelung/05_leitfaden.md
+  - introduction/license.md
 
 
 theme:
