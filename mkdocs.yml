@@ -8,32 +8,32 @@ copyright: "Copyright &copy; 2022 Open Fiber Austria Association - OFAA | suppor
 # lead to unexpected behavior).
 # I'm not sure how it works with multi-language docs.
 nav:
-  - "Zentrales OAID Register":
-    - index.md
-    - 'Grundlagen':
-      - '3-LOM': introduction/3lom.md
-      - '4-LOM': introduction/4lom.md
-    - 'OAID':
-      - 'Open Access ID': oaid/oaid.md
-      - 'Open Link ID': oaid/olid.md
-      - 'FAQ': oaid/discussions.md
-      - 'Entstehung': oaid/oaid_birth.md
-    - 'Diskussionen':
-      - discussions/support.md
-      - discussions/user_stories.md
   - "Glossar": glossar/glossar.md
   - 'Standards':
-    - 'Einführung': standards/intro.md
-    - standards/fep001_feb-workflow.md
-    - standards/fep002_darstellung-oaid.md
-    - standards/fep003_darstellung-olid.md
+      - 'Einführung': standards/intro.md
+      - standards/fep001_feb-workflow.md
+      - standards/fep002_darstellung-oaid.md
+      - standards/fep003_darstellung-olid.md
+  - "Zentrales OAID Register":
+      - index.md
+      - 'Grundlagen':
+          - '3-LOM': oaid_register/introduction/3lom.md
+          - '4-LOM': oaid_register/introduction/4lom.md
+      - 'OAID':
+          - 'Open Access ID': oaid_register/oaid/oaid.md
+          - 'Open Link ID': oaid_register/oaid/olid.md
+          - 'FAQ': oaid_register/oaid/discussions.md
+          - 'Entstehung': oaid_register/oaid/oaid_birth.md
+      - 'Diskussionen':
+          - oaid_register/discussions/support.md
+          - oaid_register/discussions/user_stories.md
   - 'Leitfaden Inhaus-Verkabelung':
-    - inhaus_verkabelung/01_einleitung.md
-    - inhaus_verkabelung/02_fokus_leitfaden.md
-    - inhaus_verkabelung/03_abbreviations.md
-    - inhaus_verkabelung/04_rechtliche_grundlagen.md
-    - inhaus_verkabelung/05_leitfaden.md
-  - introduction/license.md
+      - inhaus_verkabelung/01_einleitung.md
+      - inhaus_verkabelung/02_fokus_leitfaden.md
+      - inhaus_verkabelung/03_abbreviations.md
+      - inhaus_verkabelung/04_rechtliche_grundlagen.md
+      - inhaus_verkabelung/05_leitfaden.md
+  - license.md
 
 
 theme:
@@ -55,7 +55,7 @@ theme:
     # - navigation.tabs        # uncomment this line to use a horizontal nav bar as well
     # - navigation.tabs.sticky # uncomment this line to make the horizontal nav bar sticky
     # - navigation.sections    # uncomment this line to disable collapsible top-level sidebar sections and show them as bold headers
-    - navigation.indexes
+    # - navigation.indexes
     - content.code.annotate
     - content.tabs.link
 
