@@ -8,7 +8,7 @@ copyright: "Copyright &copy; 2022 Open Fiber Austria Association - OFAA | suppor
 # lead to unexpected behavior).
 # I'm not sure how it works with multi-language docs.
 nav:
-  - "Glossar": glossar/glossar.md
+#  - "Glossar": glossar/glossar.md
   - 'Standards':
       - 'Einführung': standards/intro.md
       - standards/fep001_feb-workflow.md
