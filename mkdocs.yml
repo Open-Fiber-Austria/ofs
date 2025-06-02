@@ -8,6 +8,7 @@ copyright: "Copyright &copy; 2022 Open Fiber Austria Association - OFAA | suppor
 # lead to unexpected behavior).
 # I'm not sure how it works with multi-language docs.
 nav:
+  - "Startseite": index.md
 #  - "Glossar": glossar/glossar.md
   - 'Standards':
       - 'Einführung': standards/intro.md
@@ -15,7 +16,7 @@ nav:
       - standards/fep002_darstellung-oaid.md
       - standards/fep003_darstellung-olid.md
   - "Zentrales OAID Register":
-      - index.md
+      - oaid_register/index.md
       - 'Grundlagen':
           - '3-LOM': oaid_register/introduction/3lom.md
           - '4-LOM': oaid_register/introduction/4lom.md
