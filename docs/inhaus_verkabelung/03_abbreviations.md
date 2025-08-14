@@ -9,6 +9,10 @@
 
 : **Demarkationspunkt:** Verantwortungs- und meist Eigentumsübergang von vorgelagerten Access-Netzen zur IHV (i.d.R. identisch mit HÜP bzw. GÜP)
 
+#### ENE
+
+: **Endnutzereinheit:** Kundeneinheiten in einem MPO (Wohnungen, Wirtschaftsbetriebe, Büros, etc.)
+
 #### GIA
 
 : **Gigabit-Infrastructure-Act:** EU-Nachfolgeverordnung vom 29.04.24 zur Kostensenkungsrichtlinie 
@@ -41,10 +45,6 @@
 
 : **Netzebene:** Abgegrenzte Teile des LWL-Netzes, NE3 = Access-Netz, NE4 = Gebäudenetz, NE5 = Wohnungsnetz
 
-#### ENE
-
-: **Endnutzereinheit:** Kundeneinheiten in einem MPO (Wohnungen, Wirtschaftsbetriebe, Büros, etc.)
-
 #### OAID
 
 : **Open Access ID:** Von der OFAA verwaltete 8-stellige, eindeutig codierte Buchstaben-/Zahlen-Kombination einer mittels LWL versorgten Endnutzereinheit – Bsp. „ABCE3210“
@@ -73,13 +73,13 @@
 
 : **Optical Telecommunication Outlet:** Teilnehmer-Abschlussdose bei der Endnutzereinheit unter Bereitstellung der verfügbaren LWL-Fasern auf Steckern zur Verbindung mit ONTs
 
-#### P2P
-
-: **Point to point:** Netztopologie, bei der jeder Endnutzer direkt mit dem zentralen Knoten (Ortszentrale) über eine eigene dedizierte Leitung verbunden ist
-
 #### P2MP
 
 : **Point to Multipoint:** Netztopologie, bei der ein zentraler Knoten über eine gemeinsame Leitung oder Infrastruktur mittels Splitter mit mehreren Endnutzern verbunden ist
+
+#### P2P
+
+: **Point to point:** Netztopologie, bei der jeder Endnutzer direkt mit dem zentralen Knoten (Ortszentrale) über eine eigene dedizierte Leitung verbunden ist
 
 #### PIP
 

@@ -39,6 +39,7 @@ Zum Starten über die Kommandozeile navigieren sie mit dem Terminal ihrer Wahl i
 sie mit dem nachfolgenden Befehl die Dokumentation lokal starten.
 
 ```shell
+docker-compose build
 docker-compose up development 
 ```
 
