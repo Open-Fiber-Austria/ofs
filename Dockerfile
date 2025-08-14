@@ -5,7 +5,12 @@ FROM squidfunk/mkdocs-material:latest as develop
 
 COPY requirements.txt /docs/requirements.txt
 RUN pip install -r requirements.txt && rm -f /docs/requirements.txt
+
+COPY plugins /plugins
+RUN pip install /plugins
+
 COPY includes/abbreviations.md /docs/includes/abbreviations.md
+COPY includes/glossary_links.md /docs/includes/glossary_links.md
 COPY mkdocs.yml /docs/mkdocs.yml
 COPY docs /docs/docs
 
@@ -19,3 +24,4 @@ FROM nginx:latest as production
 
 # Now we copy the generated documentation into our nginx container
 COPY --from=builder /docs/site /usr/share/nginx/html
+

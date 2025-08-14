@@ -2,6 +2,8 @@
 #  https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
 site_name: Open Fiber Standards
 
+site_url: https://docs.ofaa.at
+
 copyright: "Copyright &copy; 2022 Open Fiber Austria Association - OFAA | supported by correlate analytics gmbh + yio gmbh"
 
 # Better provide nav by configuration (otherwise mkdocs tries to infer the structure of your documentation which might
@@ -59,6 +61,7 @@ theme:
     # - navigation.indexes
     - content.code.annotate
     - content.tabs.link
+    - content.tooltips
 
 extra:
   social:
@@ -103,10 +106,16 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.inlinehilite
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.tabbed:
       alternate_style: true
   - md_in_html
   - pymdownx.tilde
   - pymdownx.caret
+  - footnotes
+
+plugins:
+  - search
+  - auto_glossary_link:
+      glossary_path: includes/glossary_links.md
