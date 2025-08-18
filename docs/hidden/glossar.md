@@ -3,15 +3,6 @@
 ## Grundsätzliches Überlegungen
 
 - Begriffsdschungel vereinheitlichen, Homes Passed sagt jeder, aber jeder meint was anderes damit 
-- Haushalte und Homes sind nicht das Gleiche
-
-
-    !!! info "Haushalt Bedeutung"
-    
-        Ein Haushalt beschreibt eine soziale Einheit, d. h. Personen mit Hauptwohnsitz an einer Adresse (laut Statistik Austria). 
-        Da Haushalte statistisch erfasst, aber nicht geokodiert oder adressgenau (öffentlich zugänglich) verfügbar sind, 
-        eignen sie sich nicht zur Planung, Messung oder Bewertung von Ausbauzielen.
-
 
 
 <figure markdown="span">
@@ -19,28 +10,43 @@
 </figure>
 
 
+- Haushalte und Homes sind nicht das Gleiche
+
+
+    !!! info "Haushalt vs. Home"
+    
+        Ein **Haushalt** beschreibt eine soziale Einheit, d. h. Personen mit Hauptwohnsitz an einer Adresse (laut Statistik Austria). 
+        Da Haushalte statistisch erfasst, aber nicht geokodiert oder adressgenau (öffentlich zugänglich) verfügbar sind, 
+        **eignen sie sich nicht** zur Planung, Messung oder Bewertung von Ausbauzielen.
+
+        **Home** ist ein technischer Begriff, der sich im Glasfaserausbau etabliert hat - insbesondere in den Formulierungen FTTH (Fiber to the Home) oder Homes Passed. <br>
+        Anders als der sozialstatistische „Haushalt“ bezieht sich „Home“ in der technischen Planung auf eine adressierbare physische Nutzungseinheit, die potenziell an das Netz angeschlossen werden kann.
+        Je nach Kontext kann „Home“ also eine oder mehrere Wohnungen, Geschäftseinheiten oder Einfamilienhäuser bezeichnen - unabhängig davon, ob dort aktuell ein Haushalt lebt.
+
+
+
 - Breitbandverfügbarkeitsmeldungen (ZIB, RTR) sollen umgestellt werden auf BEV-Register (objektgenaue Meldung) →
 sinnvollerweise passen die Definitionen auch mit den Elementen aus dem Register zusammen
 
-    !!! info "BEV-Register"
 
+    !!! info "BEV-Register"
         Mit dem [BEV-Register](https://www.bev.gv.at/Services/Downloads/Produktbezogene-Downloads/Unentgeltliche-Produkte/Adressregister.html)[^1] sind die **öffentlich zugänglichen** und im 6-Monatszyklus veröffentlichen **AGWR-Daten** gemeint
 
 
-[^1]: https://www.bev.gv.at/Services/Downloads/Produktbezogene-Downloads/Unentgeltliche-Produkte/Adressregister.html
+    - Eine Adresse hat ein oder mehrere Objekte. Ein Objekt hat eine oder mehrere Nutzungseinheiten (siehe Abbildung AGWR-Kennziffern[^2])
+    - Glasfaser geht bei FTTH bis in die Nutzungseinheit, also sollte die Definition auf dieser Ebene ansetzen 
+    - Erster Übersetzungsversuch von Nutzungseinheit: Premise (statt Home; Home wird schnell mit Haushalt verknüpft → problematisch)
 
-- Eine Adresse hat ein oder mehrere Objekte. Ein Objekt hat eine oder mehrere Nutzungseinheiten (siehe [Abbildung AGWR-Kennziffern](https://www.statistik.at/fileadmin/pages/489/AGWR_Allgemeines_Adressen.pdf)[^2])
-- Glasfaser geht bei FTTH bis in die Nutzungseinheit, also sollte die Definition auf dieser Ebene ansetzen 
-- Erster Übersetzungsversuch von Nutzungseinheit: Premise (statt Home)
-    - Home wird schnell mit Haushalt verknüpft → problematisch
-
-[^2]: https://www.statistik.at/fileadmin/pages/489/AGWR_Allgemeines_Adressen.pdf
 
 <figure markdown="span">
   ![OBJNR-NTZLNR](/assets/objnr_ntznr.png){ width="80%"}
-  <small>Quelle: [Statistik Austria: Kennziffern der Adressen](https://www.statistik.at/fileadmin/pages/489/AGWR_Allgemeines_Adressen.pdf)</small>
+  <small>Quelle: [Statistik Austria: Kennziffern der Adressen](https://www.statistik.at/fileadmin/pages/489/AGWR_Allgemeines_Adressen.pdf)[^2]</small>
 </figure>
 
+
+
+[^1]: https://www.bev.gv.at/Services/Downloads/Produktbezogene-Downloads/Unentgeltliche-Produkte/Adressregister.html
+[^2]: https://www.statistik.at/fileadmin/pages/489/AGWR_Allgemeines_Adressen.pdf
 
 
 ## Premises
@@ -57,7 +63,6 @@ additional or exceptional cost as compared to the standard commercial practice a
 exceed the usual price in the Member State concerned. That price must be determined by the competent national
 authority;*
 
-[^3]: https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52023XC0131(01)
 
 
 Wird [in der deutschen Fassung](https://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=CELEX:52023XC0131(01))[^4] mit „Räumlichkeiten“ übersetzt, inhaltlich sehr nahe an **„Nutzungseinheiten“**
@@ -70,12 +75,11 @@ nicht höher sein als die normale Anschlussgebühr. Er darf also im Vergleich zu
 Zusatz- oder Sonderkosten beinhalten und in keinem Fall den in dem betreffenden Mitgliedstaat üblichen Preis
 übersteigen. Dieser Preis muss von der zuständigen einzelstaatlichen Behörde festgelegt werden;*
 
-[^4]: https://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=CELEX:52023XC0131(01)
 
 `Definition` 
 
 - Eine Premise ist eine Nutzungseinheit eines Objekts aus dem BEV-Register 
-- Gibt es noch kein Objekt mit Nutzungseinheiten im BEV Register, kann man in einer ersten Annäherung über
+- Gibt es noch kein Objekt mit Nutzungseinheiten im BEV-Register, kann man in einer ersten Annäherung über
 Katastralgemeindenummer + Grundstücksnummer gehen (KG+GNR) => für Identifikation und Verschlüsselung; Verortung ist
 NICHT (exakt) möglich
 
@@ -96,7 +100,7 @@ Premises Connected ⊇ Premise Connected Service-ready ⊇ Premises Activated
 
 !!! info "Hinweis zur Abgrenzung: Premises ≠ Haushalte"
   
-    Im Glasfaserausbau sind Premises die maßgebliche technische Einheit – nicht Haushalte. Eine Premise ist eine räumlich eindeutig identifizierbare Adresse (z. B. Wohnung, Einfamilienhaus, Geschäftslokal) mit eigener ID im BEV-Register. Ein Haushalt hingegen beschreibt eine soziale Einheit, d. h. Personen mit Hauptwohnsitz an einer Adresse (laut Statistik Austria).
+    Im Glasfaserausbau sind Premises die maßgebliche technische Einheit – nicht Haushalte. Eine **Premise** ist eine räumlich eindeutig identifizierbare Adresse (z. B. Wohnung, Einfamilienhaus, Geschäftslokal) mit eigener ID im BEV-Register. Ein **Haushalt** hingegen beschreibt eine soziale Einheit, d. h. Personen mit Hauptwohnsitz an einer Adresse (laut Statistik Austria).
 
     Da Haushalte statistisch erfasst, aber nicht geokodiert oder adressscharf (öffentlich zugänglich) verfügbar sind, eignen sie sich nicht zur Planung, Messung oder Bewertung von Ausbauzielen. Premises hingegen bilden die Grundlage für die technische Erschließung und die Definition von Kennzahlen wie Passed, Connected oder Activated.
 
@@ -107,6 +111,10 @@ Premises Connected ⊇ Premise Connected Service-ready ⊇ Premises Activated
   ![Trennung_Trichter](/assets/trichter_v5.png){ width="100%"}
 </figure>
 
+
+
+[^3]: https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52023XC0131(01)
+[^4]: https://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=CELEX:52023XC0131(01)
 
 
 
@@ -255,7 +263,7 @@ Wenn das Gebäude das gesamte Glasfasernetz darstellt, hat es also:
 - (3 PCS – eingeklammert, weil noch offen, ob eine Unterscheidung hier notwendig ist)
 - 2 PA
 
-<span id="schaubild"></span>
+
 <figure markdown="span">
   ![Schaubild](/assets/schaubild_v1.jpg){ width="100%"}
 </figure>
@@ -390,7 +398,7 @@ Wenn das Gebäude das gesamte Glasfasernetz darstellt, hat es also:
 
 ## Take Rates am Schaubild erläutert:
 
-Bezieht man sich wieder auf [das Schaubild](#schaubild) so ergeben sich für das theoretische Open Access Glasfasernetz bestehend aus
+Bezieht man sich wieder auf das Schaubild so ergeben sich für das theoretische Open Access Glasfasernetz bestehend aus
 diesem einen Gebäude:
 
 - Aktivierungsrate: 50,00% (2 PA zu 4 PC)
