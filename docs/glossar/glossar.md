@@ -1,7 +1,5 @@
 # Glossar
 
-## Einleitung
-
 *Klarheit für alle – Einheitliche Definitionen und Maßstäbe für transparente Glasfasernetze.*
 
 Mit dem OFAA-Glossar schaffen wir eine gemeinsame Grundlage für zentrale Begriffe und Definitionen im Glasfaserausbau. 
@@ -356,8 +354,8 @@ Wenn das Gebäude das gesamte Glasfasernetz darstellt, hat es also:
 
 `Berechnung` 
 
-- Premises Connected / Premises Passed
-- **= PC/PP**
+- Premises Activated / Premises Passed
+- **= PA/PP**
 
 
 `Beschreibung` 
@@ -429,7 +427,7 @@ Bezieht man sich wieder auf das Schaubild so ergeben sich für das theoretische 
 diesem einen Gebäude:
 
 - Aktivierungsrate: 50,00% (2 PA zu 4 PC)
-- Anschlussrate /Take-up Rate: 66,67% (4 PC zu 6 PC)
+- Anschlussrate /Take-up Rate: 33,33% (2 PA zu 6 PP)
 - Ausbaurate: 100,00% (6 PC zu 6 PPL)
 - Versorgungsrate: 85,71% (6 PP zu 7 PPO)
 
