@@ -7,7 +7,7 @@ runs:
   steps:
     # simply take the mkdocs tool to build a new documentation
     #  (static content) to check if syntax is correct.
-    - uses: actions/setup-python@v2
+    - uses: actions/setup-python@v5
       with:
         python-version: 3.x
     - run: pip install -r requirements.txt

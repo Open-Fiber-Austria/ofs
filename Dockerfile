@@ -1,10 +1,10 @@
-FROM squidfunk/mkdocs-material:latest as develop
+FROM zensical/zensical:latest as develop
 # We build a image that is capable to serve our contents (with all dependencies installed)
 # You can use this build-phase as a live development server
 #  Just mount your documentation into the /docs Directory.
 
 COPY requirements.txt /docs/requirements.txt
-RUN pip install -r requirements.txt && rm -f /docs/requirements.txt
+RUN pip install -r requirements.txt
 
 COPY plugins /plugins
 RUN pip install /plugins
@@ -17,8 +17,7 @@ COPY docs /docs/docs
 FROM develop as builder
 # We build our documentation here, the generated static contents will be copied
 # into our nginx container to be served.
-RUN mkdocs build --verbose --clean --config-file ./mkdocs.yml
-
+RUN zensical build --clean --config-file ./mkdocs.yml
 
 FROM nginx:latest as production
 
