@@ -6,18 +6,18 @@ FROM zensical/zensical:latest as develop
 COPY requirements.txt /docs/requirements.txt
 RUN pip install -r requirements.txt
 
-COPY plugins /plugins
-RUN pip install /plugins
+#COPY plugins /plugins
+#RUN pip install /plugins
 
 COPY includes/abbreviations.md /docs/includes/abbreviations.md
 COPY includes/glossary_links.md /docs/includes/glossary_links.md
-COPY mkdocs.yml /docs/mkdocs.yml
+COPY zensical.toml /docs/zensical.toml
 COPY docs /docs/docs
 
 FROM develop as builder
 # We build our documentation here, the generated static contents will be copied
 # into our nginx container to be served.
-RUN zensical build --clean --config-file ./mkdocs.yml
+RUN zensical build --clean
 
 FROM nginx:latest as production
 

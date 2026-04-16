@@ -9,6 +9,6 @@ services:
       target: develop
     volumes:
     - ${PWD}/docs:/docs/docs:z
-    - ${PWD}/mkdocs.yml:/docs/mkdocs.yml:z
+    - ${PWD}/zensical.toml:/docs/zensical.toml:z
     ports:
     - 8081:8000
