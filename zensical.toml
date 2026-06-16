@@ -34,7 +34,7 @@ site_url = "https://docs.ofaa.at"
 #
 # Read more: https://zensical.org/docs/setup/basics/#copyright
 copyright = """
-Copyright &copy; 2022 Open Fiber Austria Association - OFAA | supported by correlate analytics gmbh + yio gmbh
+Copyright &copy; 2026 Open Fiber Austria Association - OFAA | supported by correlate analytics gmbh + yio gmbh
 """
 
 
@@ -78,6 +78,15 @@ nav = [
         "inhaus_verkabelung/03_abbreviations.md",
         "inhaus_verkabelung/04_rechtliche_grundlagen.md",
         "inhaus_verkabelung/05_leitfaden.md",
+    ]},
+    {"Risikomanagement & Informationssicherheit" = [
+        {"Einführung" = "informationssicherheit/01_einfuehrung.md"},
+        {"Regulatorik" = "informationssicherheit/02_regulatorik.md"},
+        {"Sicherheit" = "informationssicherheit/03_sicherheit.md"},
+        "informationssicherheit/04_zielbild.md",
+        {"Maßnahmen" = "informationssicherheit/05_massnahmen.md"},
+        {"Implementierung des Managementsystems" = "informationssicherheit/06_managementsystem.md"},
+        "informationssicherheit/07_phasen.md",
     ]},
     "license.md",
 ]
