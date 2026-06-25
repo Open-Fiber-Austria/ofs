@@ -1,4 +1,8 @@
-# Willkommen
+# Offene Glasfasernetze: Wissen, Standards und Leitfäden der Open Fiber Austria
+
+Open Fiber Austria (OFAA) ist die zentrale Plattform für offene Glasfasernetze in Österreich und setzt sich für den flächendeckenden 
+Ausbau sowie den diskriminierungsfreien Zugang zu leistungsfähiger FTTH-Infrastruktur ein. Mit ihren technischen und regulatorischen 
+Leitlinien fördert sie offene Netzarchitekturen, fairen Wettbewerb und die nachhaltige Digitalisierung des Standorts Österreich.
 
 Der flächendeckende Ausbau von FTTH-Glasfasernetzen in Österreich erfordert ein offenes, zukunftsfähiges Architekturmodell. 
 Das Three Layer Open Model (3LOM) – mit der strikten Trennung von passiver Infrastruktur, Netzbetrieb und Endkundendiensten 

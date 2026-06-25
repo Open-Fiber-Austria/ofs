@@ -2,7 +2,7 @@
 
 !!! tip "Vollständiger Leitfaden über OFAA erhältlich"
 
-    Dies ist ein Auszug des Leitfadens „Risikomanagement und Informationssicherheit“. <br>
+    Dies ist kein vollständiger Leitfaden, sondern ein Auszug. <br>
     Der vollumfängliche Leitfaden kann über [office@ofaa.at](mailto:office@ofaa.at) bestellt werden.
 
 
