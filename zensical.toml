@@ -48,14 +48,14 @@ Copyright &copy; 2026 Open Fiber Austria Association - OFAA | supported by corre
 # Read more: https://zensical.org/docs/setup/navigation/
 nav = [
     {"Startseite" = "index.md"},
-    {"Glossar" = "glossar/glossar.md"},
+    {"Glossar - Begriffe erklärt" = "glossar/glossar.md"},
     {"Standards" = [
         {"Einführung" = "standards/intro.md"},
         "standards/fep001_feb-workflow.md",
         "standards/fep002_darstellung-oaid.md",
         "standards/fep003_darstellung-olid.md",
     ]},
-    {"Zentrales OAID Register" = [
+    {"OAID-Register" = [
         "oaid_register/index.md",
         {"Grundlagen" = [
             {"3-LOM" = "oaid_register/introduction/3lom.md"},
@@ -72,14 +72,14 @@ nav = [
             "oaid_register/discussions/user_stories.md",
         ]},
     ]},
-    {"Leitfaden Inhaus-Verkabelung" = [
+    {"Leitfaden Inhouse-Verkabelung" = [
         "inhaus_verkabelung/01_einleitung.md",
         "inhaus_verkabelung/02_fokus_leitfaden.md",
         "inhaus_verkabelung/03_abbreviations.md",
         "inhaus_verkabelung/04_rechtliche_grundlagen.md",
         "inhaus_verkabelung/05_leitfaden.md",
     ]},
-    {"Risikomanagement & Informationssicherheit" = [
+    {"Leitfaden NIS2 - Risiken & IT-Sicherheit" = [
         {"Einführung" = "informationssicherheit/01_einfuehrung.md"},
         {"Regulatorik" = "informationssicherheit/02_regulatorik.md"},
         {"Sicherheit" = "informationssicherheit/03_sicherheit.md"},
@@ -300,7 +300,7 @@ features = [
 # option in the "theme" subsection. The logo must be a relative path to a file
 # in your "docs_dir", e.g., to use `docs/assets/logo.png` you would set:
 # ----------------------------------------------------------------------------
-logo = "assets/logo/logo_ofaa_squared.png"
+logo = "assets/logo/ofaa_logo.png"
 
 # ----------------------------------------------------------------------------
 # If you don't have a dedicated project logo, you can use a built-in icon from
