@@ -88,6 +88,11 @@ nav = [
         {"Implementierung des Managementsystems" = "nis2/06_managementsystem.md"},
         "nis2/07_phasen.md",
     ]},
+    {"Leitfaden Nachhaltigkeit" = [
+        {"Vorwort" = "nachhaltigkeit/index.md"},
+        {"Über den Leitfaden" = "nachhaltigkeit/leitfaden.md"},
+        {"Kontakt" = "nachhaltigkeit/kontakt.md"},
+    ]},
     "license.md",
 ]
 
